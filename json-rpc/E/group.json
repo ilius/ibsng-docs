@@ -1,0 +1,415 @@
+{
+  "openrpc": "1.2.1",
+  "info": {
+    "version": "1.0.0",
+    "title": "IBSng: branch E: USER: group"
+  },
+  "methods": [
+    {
+      "name": "group.addNewGroup",
+      "description": "",
+      "requires_perm": "CHANGE GROUP",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "group_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "comment",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "isp_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "Group ID",
+        "schema": {
+          "title": "",
+          "type": "number"
+        }
+      }
+    },
+    {
+      "name": "group.copyGroup",
+      "description": "",
+      "requires_perm": "CHANGE GROUP",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "group_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "comment",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "isp_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "copy_count",
+          "description": "",
+          "schema": {
+            "type": "number"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "list of Group IDs",
+        "schema": {
+          "title": "",
+          "type": "array"
+        }
+      }
+    },
+    {
+      "name": "group.listGroups",
+      "description": "return a list of group names, that requester admin has access to",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "active_only",
+          "description": "pass true if you only want active groups",
+          "schema": {
+            "type": "boolean"
+          },
+          "optional": true
+        },
+        {
+          "name": "isp_id",
+          "description": "comma-seprated. list of isp ids",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "list of group names",
+        "schema": {
+          "title": "",
+          "type": "array"
+        }
+      }
+    },
+    {
+      "name": "group.listGroupsWithIDs",
+      "description": "return a list of group IDs and names, that requester admin can change service to.               Added in tag 320",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "active_only",
+          "description": "pass true if you only want active groups",
+          "schema": {
+            "type": "boolean"
+          },
+          "optional": true
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "array"
+        }
+      }
+    },
+    {
+      "name": "group.listGroupInfos",
+      "description": "return list of group informations, that requester admin has access to.         Added in tag 320",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "active_only",
+          "description": "pass true if you only want active groups",
+          "schema": {
+            "type": "boolean"
+          },
+          "optional": true
+        },
+        {
+          "name": "isp_id",
+          "description": "comma-seprated. list of isp ids",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "list of group informations",
+        "schema": {
+          "title": "",
+          "type": "array"
+        }
+      }
+    },
+    {
+      "name": "group.getGroupCredits",
+      "description": "",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "keys are group names, values are group credits",
+        "schema": {
+          "title": "",
+          "type": "object"
+        }
+      }
+    },
+    {
+      "name": "group.getGroupUsersCount",
+      "description": "",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "keys are group names, values are user count in each group",
+        "schema": {
+          "title": "",
+          "type": "object"
+        }
+      }
+    },
+    {
+      "name": "group.getGroupInfo",
+      "description": "",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "group_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          },
+          "optional": true
+        },
+        {
+          "name": "group_id",
+          "description": "",
+          "schema": {
+            "type": "number"
+          },
+          "optional": true
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "object",
+          "items": [
+            {
+              "name": "group_id",
+              "description": "",
+              "schema": {
+                "type": "number"
+              }
+            },
+            {
+              "name": "group_name",
+              "description": "",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "comment",
+              "description": "",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "isp_id",
+              "description": "",
+              "schema": {
+                "type": "number"
+              }
+            },
+            {
+              "name": "isp_name",
+              "description": "",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "raw_attrs",
+              "description": "dates are gregorian",
+              "schema": {
+                "type": "object"
+              }
+            },
+            {
+              "name": "attrs",
+              "description": "dates are based on request date_type",
+              "schema": {
+                "type": "object"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "group.updateGroup",
+      "description": "",
+      "requires_perm": "CHANGE GROUP",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "group_id",
+          "description": "",
+          "schema": {
+            "type": "number"
+          }
+        },
+        {
+          "name": "group_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "comment",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "null"
+        }
+      }
+    },
+    {
+      "name": "group.updateGroupAttrs",
+      "description": "",
+      "requires_perm": "CHANGE GROUP",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "group_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "attrs",
+          "description": "",
+          "schema": {
+            "type": "object"
+          }
+        },
+        {
+          "name": "to_del_attrs",
+          "description": "",
+          "schema": {
+            "type": "array"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "null"
+        }
+      }
+    },
+    {
+      "name": "group.delGroup",
+      "description": "",
+      "requires_perm": "CHANGE GROUP",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "group_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "null"
+        }
+      }
+    }
+  ]
+}

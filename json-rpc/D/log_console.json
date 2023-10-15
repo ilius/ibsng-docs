@@ -1,0 +1,28 @@
+{
+  "openrpc": "1.2.1",
+  "info": {
+    "version": "1.0.0",
+    "title": "IBSng: branch D: USER: log_console"
+  },
+  "methods": [
+    {
+      "name": "log_console.getConsoleBuffer",
+      "description": "",
+      "requires_perm": "SEE CONNECTION LOGS",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "array"
+        }
+      }
+    }
+  ]
+}

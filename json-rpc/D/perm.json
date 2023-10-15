@@ -1,0 +1,441 @@
+{
+  "openrpc": "1.2.1",
+  "info": {
+    "version": "1.0.0",
+    "title": "IBSng: branch D: USER: perm"
+  },
+  "methods": [
+    {
+      "name": "perm.hasPerm",
+      "description": "",
+      "requires_perm": "SEE ADMIN PERMISSIONS",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "perm_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "admin_username",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "true if admin has this permission, false otherwise",
+        "schema": {
+          "title": "",
+          "type": "boolean"
+        }
+      }
+    },
+    {
+      "name": "perm.canDo",
+      "description": "return True if given 'admin_username' canDo given 'perm_name' with given 'params'",
+      "requires_perm": "SEE ADMIN PERMISSIONS",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "perm_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "admin_username",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "params",
+          "description": "",
+          "schema": {
+            "type": "array"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "true if admin can do it, false otherwise",
+        "schema": {
+          "title": "",
+          "type": "boolean"
+        }
+      }
+    },
+    {
+      "name": "perm.getPermsOfAdmin",
+      "description": "",
+      "requires_perm": "SEE ADMIN PERMISSIONS",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "admin_username",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "array"
+        }
+      }
+    },
+    {
+      "name": "perm.getAllPerms",
+      "description": "",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "array"
+        }
+      }
+    },
+    {
+      "name": "perm.getAdminPermVal",
+      "description": "returns value of permission {perm_name} for admin {admin_username}",
+      "requires_perm": "SEE ADMIN PERMISSIONS",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "admin_username",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "perm_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "type depends on {perm_name}",
+        "schema": {
+          "title": "",
+          "type": ""
+        }
+      }
+    },
+    {
+      "name": "perm.changePermission",
+      "description": "",
+      "requires_perm": "CHANGE ADMIN PERMISSIONS",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "admin_username",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "perm_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "perm_value",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "null"
+        }
+      }
+    },
+    {
+      "name": "perm.delPermission",
+      "description": "",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "admin_username",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "perm_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "null"
+        }
+      }
+    },
+    {
+      "name": "perm.delPermissionValue",
+      "description": "",
+      "requires_perm": "CHANGE ADMIN PERMISSIONS",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "admin_username",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "perm_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "perm_value",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "null"
+        }
+      }
+    },
+    {
+      "name": "perm.savePermsOfAdminToTemplate",
+      "description": "",
+      "requires_perm": "CHANGE ADMIN PERMISSIONS",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "admin_username",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "perm_template_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "null"
+        }
+      }
+    },
+    {
+      "name": "perm.getListOfPermTemplates",
+      "description": "",
+      "requires_perm": "CHANGE ADMIN PERMISSIONS",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "list of template names",
+        "schema": {
+          "title": "",
+          "type": "array"
+        }
+      }
+    },
+    {
+      "name": "perm.getPermsOfTemplate",
+      "description": "",
+      "requires_perm": "CHANGE ADMIN PERMISSIONS",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "perm_template_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "array"
+        }
+      }
+    },
+    {
+      "name": "perm.loadPermTemplateToAdmin",
+      "description": "",
+      "requires_perm": "CHANGE ADMIN PERMISSIONS",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "perm_template_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "admin_username",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "null"
+        }
+      }
+    },
+    {
+      "name": "perm.deletePermTemplate",
+      "description": "",
+      "requires_perm": "CHANGE ADMIN PERMISSIONS",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "perm_template_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "null"
+        }
+      }
+    },
+    {
+      "name": "perm.loadPermsFromAnotherAdmin",
+      "description": "",
+      "requires_perm": "CHANGE ADMIN PERMISSIONS",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "admin_username",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "load_from_admin_username",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "null"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "openrpc": "1.2.1",
+  "info": {
+    "version": "1.0.0",
+    "title": "IBSng: branch D: USER: charge"
+  },
+  "methods": [
+    {
+      "name": "charge.listCharges",
+      "description": "return list of accessible charge names",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "isp_id",
+          "description": "comma-seprated. list of isp ids",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "list of charge names",
+        "schema": {
+          "title": "",
+          "type": "array"
+        }
+      }
+    },
+    {
+      "name": "charge.getChargeInfo",
+      "description": "",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "charge_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "object",
+          "items": [
+            {
+              "name": "charge_id",
+              "description": "",
+              "schema": {
+                "type": "number"
+              }
+            },
+            {
+              "name": "charge_name",
+              "description": "",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "comment",
+              "description": "",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "isp_id",
+              "description": "",
+              "schema": {
+                "type": "number"
+              }
+            },
+            {
+              "name": "isp_name",
+              "description": "",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "charge_rules",
+              "description": "",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "title": "",
+                  "type": "dict"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "charge.addNewCharge",
+      "description": "",
+      "requires_perm": "CHANGE CHARGE",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "charge_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "comment",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "isp_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "Charge ID",
+        "schema": {
+          "title": "",
+          "type": "number"
+        }
+      }
+    },
+    {
+      "name": "charge.copyCharge",
+      "description": "just one copy",
+      "requires_perm": "CHANGE CHARGE",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "charge_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "comment",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "New Charge IDs",
+        "schema": {
+          "title": "",
+          "type": "array"
+        }
+      }
+    },
+    {
+      "name": "charge.copyCharge",
+      "description": "one or more copies",
+      "requires_perm": "CHANGE CHARGE",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "charge_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "comment",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "copy_count",
+          "description": "",
+          "schema": {
+            "type": "number"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "New Charge IDs",
+        "schema": {
+          "title": "",
+          "type": "array"
+        }
+      }
+    },
+    {
+      "name": "charge.updateCharge",
+      "description": "",
+      "requires_perm": "CHANGE CHARGE",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "charge_id",
+          "description": "",
+          "schema": {
+            "type": "number"
+          }
+        },
+        {
+          "name": "charge_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "comment",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "isp_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "null"
+        }
+      }
+    },
+    {
+      "name": "charge.deleteCharge",
+      "description": "",
+      "requires_perm": "CHANGE CHARGE",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "charge_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "null"
+        }
+      }
+    },
+    {
+      "name": "charge.addNewChargeRule",
+      "description": "",
+      "requires_perm": "CHANGE CHARGE",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "charge_rule_description",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "charge_rule_priority",
+          "description": "",
+          "schema": {
+            "type": "number"
+          }
+        },
+        {
+          "name": "charge_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "Charge Rule ID",
+        "schema": {
+          "title": "",
+          "type": "number"
+        }
+      }
+    },
+    {
+      "name": "charge.updateChargeRule",
+      "description": "",
+      "requires_perm": "CHANGE CHARGE",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "charge_rule_id",
+          "description": "",
+          "schema": {
+            "type": "number"
+          }
+        },
+        {
+          "name": "charge_rule_description",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "charge_rule_priority",
+          "description": "",
+          "schema": {
+            "type": "number"
+          }
+        },
+        {
+          "name": "charge_name",
+          "description": "str",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "null"
+        }
+      }
+    },
+    {
+      "name": "charge.deleteChargeRule",
+      "description": "",
+      "requires_perm": "CHANGE CHARGE",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "charge_rule_id",
+          "description": "",
+          "schema": {
+            "type": "number"
+          }
+        },
+        {
+          "name": "charge_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "null"
+        }
+      }
+    },
+    {
+      "name": "charge.updateChargeRuleAttrs",
+      "description": "",
+      "params": [
+        {
+          "name": "auth_type",
+          "value": ["ADMIN"]
+        },
+        {
+          "name": "charge_rule_id",
+          "description": "",
+          "schema": {
+            "type": "number"
+          }
+        },
+        {
+          "name": "charge_name",
+          "description": "",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "update_attrs",
+          "description": "",
+          "schema": {
+            "type": "object"
+          }
+        },
+        {
+          "name": "delete_attrs",
+          "description": "",
+          "schema": {
+            "type": "array"
+          }
+        }
+      ],
+      "result": {
+        "name": "",
+        "comment": "",
+        "schema": {
+          "title": "",
+          "type": "null"
+        }
+      }
+    }
+  ]
+}
