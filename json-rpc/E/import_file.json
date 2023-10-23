@@ -8,12 +8,9 @@
     {
       "name": "import_file.getLastSequenceValue",
       "description": "see the last sequence of customer ID",
+      "auth_type": ["ADMIN"],
       "requires_perm": "ADD CUSTOMER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "sequence_type",
           "description": "can get [CUSTOMER, USER, USER_BALANCE]",
@@ -57,11 +54,8 @@
     {
       "name": "import_file.uploadImportFile",
       "description": "upload the excel or csv file",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "file_base64",
           "description": "convert to Base64 file, excel or csv",
@@ -105,11 +99,8 @@
     {
       "name": "import_file.getUploadedFileByAdmin",
       "description": "get the list of file that uploaded by admin",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "section",
           "description": "set the section for upload file [CUSTOMER, USER, USER_BALANCE]",
@@ -223,11 +214,8 @@
     {
       "name": "import_file.startImport",
       "description": "for start import data that uploaded in last api",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "file_import_id",
           "description": "send id of recorde of import_files table that s",
@@ -255,11 +243,8 @@
     {
       "name": "import_file.getReportOfImportFile",
       "description": "get the report of import files for every section [CUSTOMER, USER, USER_BALANCE] ",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "file_import_id",
           "description": "send id of recorde of import_files table that s",

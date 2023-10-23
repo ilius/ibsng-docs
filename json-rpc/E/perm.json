@@ -8,12 +8,9 @@
     {
       "name": "perm.hasPerm",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE ADMIN PERMISSIONS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "perm_name",
           "description": "",
@@ -41,12 +38,9 @@
     {
       "name": "perm.canDo",
       "description": "return True if given 'admin_username' canDo given 'perm_name' with given 'params'",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE ADMIN PERMISSIONS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "perm_name",
           "description": "",
@@ -81,12 +75,9 @@
     {
       "name": "perm.getPermsOfAdmin",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE ADMIN PERMISSIONS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "admin_username",
           "description": "",
@@ -107,12 +98,8 @@
     {
       "name": "perm.getAllPerms",
       "description": "",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "auth_type": ["ADMIN"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -125,12 +112,9 @@
     {
       "name": "perm.getAdminPermVal",
       "description": "returns value of permission {perm_name} for admin {admin_username}",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE ADMIN PERMISSIONS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "admin_username",
           "description": "",
@@ -158,12 +142,9 @@
     {
       "name": "perm.changePermission",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE ADMIN PERMISSIONS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "admin_username",
           "description": "",
@@ -198,11 +179,8 @@
     {
       "name": "perm.delPermission",
       "description": "",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "admin_username",
           "description": "",
@@ -230,12 +208,9 @@
     {
       "name": "perm.delPermissionValue",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE ADMIN PERMISSIONS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "admin_username",
           "description": "",
@@ -270,12 +245,9 @@
     {
       "name": "perm.savePermsOfAdminToTemplate",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE ADMIN PERMISSIONS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "admin_username",
           "description": "",
@@ -303,13 +275,9 @@
     {
       "name": "perm.getListOfPermTemplates",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE ADMIN PERMISSIONS",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "params": [],
       "result": {
         "name": "",
         "comment": "list of template names",
@@ -322,12 +290,9 @@
     {
       "name": "perm.getPermsOfTemplate",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE ADMIN PERMISSIONS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "perm_template_name",
           "description": "",
@@ -348,12 +313,9 @@
     {
       "name": "perm.loadPermTemplateToAdmin",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE ADMIN PERMISSIONS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "perm_template_name",
           "description": "",
@@ -381,12 +343,9 @@
     {
       "name": "perm.deletePermTemplate",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE ADMIN PERMISSIONS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "perm_template_name",
           "description": "",
@@ -407,12 +366,9 @@
     {
       "name": "perm.loadPermsFromAnotherAdmin",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE ADMIN PERMISSIONS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "admin_username",
           "description": "",

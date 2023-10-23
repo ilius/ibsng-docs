@@ -8,11 +8,8 @@
     {
       "name": "SystemNotification.getNotifications",
       "description": "",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "last_notifications",
           "description": "default is 5",
@@ -42,11 +39,8 @@
     {
       "name": "SystemNotification.changeNotificationStatus",
       "description": "",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "notification_id",
           "description": "",

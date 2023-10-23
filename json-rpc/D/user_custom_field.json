@@ -8,12 +8,9 @@
     {
       "name": "user_custom_field.addNewCustomField",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE USER CUSTOM FIELDS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "name",
           "description": "",
@@ -72,12 +69,9 @@
     {
       "name": "user_custom_field.updateCustomField",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE USER CUSTOM FIELDS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "custom_field_id",
           "description": "",
@@ -143,12 +137,9 @@
     {
       "name": "user_custom_field.deleteCustomField",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE USER CUSTOM FIELDS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "name",
           "description": "",
@@ -169,12 +160,8 @@
     {
       "name": "user_custom_field.getAllCustomFields",
       "description": "",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "auth_type": ["ADMIN"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",

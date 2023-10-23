@@ -8,12 +8,8 @@
     {
       "name": "online_payment.getAvailableGatewayTypes",
       "description": "list of gateway names that are available and usable for user",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN", "NORMAL_USER", "VOIP_USER"]
-        }
-      ],
+      "auth_type": ["ADMIN", "NORMAL_USER", "VOIP_USER"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "list of gateway types",
@@ -26,12 +22,8 @@
     {
       "name": "online_payment.getPaymentAmountSuggestions",
       "description": "",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN", "NORMAL_USER", "VOIP_USER"]
-        }
-      ],
+      "auth_type": ["ADMIN", "NORMAL_USER", "VOIP_USER"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -44,11 +36,8 @@
     {
       "name": "online_payment.preparePayment",
       "description": "Added in tag C_dev_326",
+      "auth_type": ["ADMIN", "NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN", "NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "gateway_type",
           "description": "",
@@ -125,11 +114,8 @@
     {
       "name": "online_payment.verifyPayment",
       "description": "Added in tag C_dev_326",
+      "auth_type": ["ADMIN", "NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN", "NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "unique_id",
           "description": "",
@@ -173,12 +159,9 @@
     {
       "name": "online_payment.addGateway",
       "description": "Added in tag C_dev_326",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE ONLINE PAYMENT",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "gateway_name",
           "description": "",
@@ -241,12 +224,9 @@
     {
       "name": "online_payment.updateGateway",
       "description": "Added in tag C_dev_326",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE ONLINE PAYMENT",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "gateway_id",
           "description": "",
@@ -302,12 +282,9 @@
     {
       "name": "online_payment.deleteGateway",
       "description": "Added in tag C_dev_326",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE ONLINE PAYMENT",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "gateway_name",
           "description": "",
@@ -328,13 +305,9 @@
     {
       "name": "online_payment.getAllGatewayTypes",
       "description": "Added in tag C_dev_326",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE ONLINE PAYMENT",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "params": [],
       "result": {
         "name": "",
         "comment": "list of gateway types",
@@ -347,13 +320,9 @@
     {
       "name": "online_payment.getAllGatewayNames",
       "description": "Added in tag C_dev_326",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE ONLINE PAYMENT",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -375,13 +344,9 @@
     {
       "name": "online_payment.getAllGatewayInfos",
       "description": "Added in tag C_dev_326",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE ONLINE PAYMENT",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -394,12 +359,9 @@
     {
       "name": "online_payment.purgePayment",
       "description": "Added in tag C_dev_326",
+      "auth_type": ["ADMIN"],
       "requires_perm": "PURGE ONLINE PAYMENT",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "payment_id",
           "description": "",

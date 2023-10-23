@@ -8,12 +8,9 @@
     {
       "name": "voucher.searchVoucher",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE VOUCHER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "",
@@ -80,12 +77,9 @@
     {
       "name": "voucher.searchBatch",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE VOUCHER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "",
@@ -152,12 +146,9 @@
     {
       "name": "voucher.voucherRechargeUser",
       "description": "by admin",
+      "auth_type": ["ADMIN"],
       "requires_perm": "USE VOUCHER ON USERS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "voucher_pin",
           "description": "",
@@ -185,11 +176,8 @@
     {
       "name": "voucher.voucherRechargeUser",
       "description": "user needs 'allow_recharge_by_voucher' flag",
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "voucher_pin",
           "description": "",
@@ -210,12 +198,9 @@
     {
       "name": "voucher.voucherAddNewUser",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "USE VOUCHER ON USERS, ADD NEW USER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "voucher_pin",
           "description": "",
@@ -250,11 +235,8 @@
     {
       "name": "voucher.getBatchVoucherAttrs",
       "description": "admin needs 'SEE VOUCHER' permission, user needs 'allow_recharge_by_voucher' flag",
+      "auth_type": ["ADMIN", "NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN", "NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "voucher_pin",
           "description": "",
@@ -396,12 +378,9 @@
     {
       "name": "voucher.voucherAddBatch",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE VOUCHER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "batch_dict",
           "description": "",
@@ -457,12 +436,9 @@
     {
       "name": "voucher.voucherChangeBatchLockStatus",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE VOUCHER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "batch_id",
           "description": "",
@@ -490,12 +466,9 @@
     {
       "name": "voucher.voucherGetBatchByID",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE VOUCHER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "batch_id",
           "description": "",
@@ -598,12 +571,9 @@
     {
       "name": "voucher.getVoucherByID",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE VOUCHER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "voucher_id",
           "description": "",
@@ -675,12 +645,9 @@
     {
       "name": "voucher.voucherSearchBatch",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE VOUCHER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "",

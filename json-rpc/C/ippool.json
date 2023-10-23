@@ -8,12 +8,9 @@
     {
       "name": "ippool.addNewIPpool",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE IPPOOL",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ippool_name",
           "description": "",
@@ -41,12 +38,9 @@
     {
       "name": "ippool.updateIPpool",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE IPPOOL",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ippool_id",
           "description": "",
@@ -81,13 +75,9 @@
     {
       "name": "ippool.getIPpoolNames",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "LIST IPPOOL",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "params": [],
       "result": {
         "name": "",
         "comment": "list of ippool names",
@@ -100,12 +90,9 @@
     {
       "name": "ippool.getIPpoolNames",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "LIST IPPOOL",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ippool_type",
           "description": "",
@@ -128,12 +115,9 @@
     {
       "name": "ippool.getIPpoolInfo",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "LIST IPPOOL",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ippool_name",
           "description": "",
@@ -198,12 +182,9 @@
     {
       "name": "ippool.deleteIPpool",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE IPPOOL",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ippool_name",
           "description": "",
@@ -224,12 +205,9 @@
     {
       "name": "ippool.delIPfromPool",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE IPPOOL",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ippool_name",
           "description": "",
@@ -257,12 +235,9 @@
     {
       "name": "ippool.forceDelIPfromPool",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE IPPOOL",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ippool_name",
           "description": "",
@@ -290,12 +265,9 @@
     {
       "name": "ippool.addIPtoPool",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE IPPOOL",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ippool_name",
           "description": "",
@@ -323,12 +295,9 @@
     {
       "name": "ippool.addNewLoadBalancingIPpool",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE IPPOOL",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ippool_name",
           "description": "",
@@ -368,12 +337,9 @@
     {
       "name": "ippool.updateLoadBalancingIPpool",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE IPPOOL",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ippool_id",
           "description": "",
@@ -420,12 +386,9 @@
     {
       "name": "ippool.deleteLoadBalancingIPpool",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE IPPOOL",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ippool_name",
           "description": "",

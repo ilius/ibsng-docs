@@ -8,12 +8,9 @@
     {
       "name": "ldap.getUsernames",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEARCH USER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "starts_with",
           "description": "",
@@ -34,12 +31,9 @@
     {
       "name": "ldap.getUserInfos",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "GET USER INFORMATION",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "starts_with",
           "description": "",
@@ -60,12 +54,9 @@
     {
       "name": "ldap.getUserInfo",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "GET USER INFORMATION",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "username",
           "description": "",
@@ -86,12 +77,9 @@
     {
       "name": "ldap.getUserInfoKeys",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE LDAP DOMAIN",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "domain",
           "description": "name of ldap domain",
@@ -112,12 +100,9 @@
     {
       "name": "ldap.setLDAPIBSMapping",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE LDAP DOMAIN",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "domain",
           "description": "name of ldap domain in which mapping takes place",
@@ -159,12 +144,9 @@
     {
       "name": "ldap.getLDAPIBSMapping",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE LDAP DOMAIN",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "domain",
           "description": "",
@@ -185,12 +167,9 @@
     {
       "name": "ldap.deleteLDAPIBSMapping",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE LDAP DOMAIN",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "domain",
           "description": "name of ldap domain in which mapping takes place",
@@ -232,12 +211,9 @@
     {
       "name": "ldap.setLDAPSearchOptionsByDomain",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE LDAP DOMAIN",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "domain",
           "description": "name of ldap domain to be queried",
@@ -272,12 +248,9 @@
     {
       "name": "ldap.getLDAPSearchOptionsByDomain",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE LDAP DOMAIN",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "domain",
           "description": "name of ldap domain",

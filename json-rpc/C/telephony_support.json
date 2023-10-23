@@ -8,12 +8,9 @@
     {
       "name": "telephony_support.callerIDAuthenticate",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "TELEPHONY SUPPORT",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "caller_id",
           "description": "",
@@ -34,12 +31,9 @@
     {
       "name": "telephony_support.authenticate",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "TELEPHONY SUPPORT",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "auth_by",
           "description": "",
@@ -71,12 +65,9 @@
     {
       "name": "telephony_support.getCurrentCredit",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "TELEPHONY SUPPORT",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -97,12 +88,9 @@
     {
       "name": "telephony_support.getRemainingByteDuration",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "TELEPHONY SUPPORT",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -123,12 +111,9 @@
     {
       "name": "telephony_support.getNearestExpDate",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "TELEPHONY SUPPORT",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -149,12 +134,9 @@
     {
       "name": "telephony_support.getFailureReason",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "TELEPHONY SUPPORT",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -195,12 +177,9 @@
     {
       "name": "telephony_support.getLastConnection",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "TELEPHONY SUPPORT",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -221,12 +200,9 @@
     {
       "name": "telephony_support.recharge",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "TELEPHONY SUPPORT",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -254,12 +230,9 @@
     {
       "name": "telephony_support.checkInternetPassword",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "TELEPHONY SUPPORT",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -287,12 +260,9 @@
     {
       "name": "telephony_support.changeInternetPassword",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "TELEPHONY SUPPORT",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",

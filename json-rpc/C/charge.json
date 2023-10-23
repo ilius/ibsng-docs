@@ -8,11 +8,8 @@
     {
       "name": "charge.listCharges",
       "description": "return list of accessible charge names",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "isp_id",
           "description": "comma-seprated. list of isp ids",
@@ -33,11 +30,8 @@
     {
       "name": "charge.getChargeInfo",
       "description": "",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "charge_name",
           "description": "",
@@ -106,12 +100,9 @@
     {
       "name": "charge.addNewCharge",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE CHARGE",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "charge_name",
           "description": "",
@@ -146,12 +137,9 @@
     {
       "name": "charge.copyCharge",
       "description": "just one copy",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE CHARGE",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "charge_name",
           "description": "",
@@ -179,12 +167,9 @@
     {
       "name": "charge.copyCharge",
       "description": "one or more copies",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE CHARGE",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "charge_name",
           "description": "",
@@ -219,12 +204,9 @@
     {
       "name": "charge.updateCharge",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE CHARGE",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "charge_id",
           "description": "",
@@ -266,12 +248,9 @@
     {
       "name": "charge.deleteCharge",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE CHARGE",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "charge_name",
           "description": "",
@@ -292,12 +271,9 @@
     {
       "name": "charge.addNewChargeRule",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE CHARGE",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "charge_rule_description",
           "description": "",
@@ -332,12 +308,9 @@
     {
       "name": "charge.updateChargeRule",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE CHARGE",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "charge_rule_id",
           "description": "",
@@ -379,12 +352,9 @@
     {
       "name": "charge.deleteChargeRule",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE CHARGE",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "charge_rule_id",
           "description": "",
@@ -412,11 +382,8 @@
     {
       "name": "charge.updateChargeRuleAttrs",
       "description": "",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "charge_rule_id",
           "description": "",

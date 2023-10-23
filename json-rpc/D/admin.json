@@ -8,12 +8,9 @@
     {
       "name": "admin.addNewAdmin",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "ADD NEW ADMIN",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "admin_username",
           "description": "",
@@ -83,11 +80,8 @@
     {
       "name": "admin.getAdminInfo",
       "description": "",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "admin_username",
           "description": "",
@@ -194,11 +188,8 @@
     {
       "name": "admin.getAdminISPID",
       "description": "",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "admin_username",
           "description": "",
@@ -228,12 +219,9 @@
     {
       "name": "admin.changePassword",
       "description": "No need to permission if admin_username is the same as requester admin",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE ADMIN PASSWORD",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "admin_username",
           "description": "",
@@ -261,13 +249,9 @@
     {
       "name": "admin.getAllAdminUsernames",
       "description": "All ISPs",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE ADMIN INFO",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "params": [],
       "result": {
         "name": "",
         "comment": "List of admin usernames",
@@ -280,12 +264,9 @@
     {
       "name": "admin.getAllAdminUsernames",
       "description": "Specific ISP",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE ADMIN INFO",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "isp_name",
           "description": "",
@@ -306,12 +287,9 @@
     {
       "name": "admin.getAllAdminInfos",
       "description": "only returns admins that requester admin has access to.         Added in tag 320",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE ADMIN INFO",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "isp_name",
           "description": "admins of specific ISP",
@@ -332,12 +310,9 @@
     {
       "name": "admin.updateAdminInfo",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE ADMIN INFO",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "admin_id",
           "description": "",
@@ -414,12 +389,9 @@
     {
       "name": "admin.deleteAdmin",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "DELETE ADMIN",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "admin_username",
           "description": "",
@@ -440,12 +412,9 @@
     {
       "name": "admin.generateOTP",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE ADMIN PASSWORD",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "pass_len",
           "description": "",
@@ -480,12 +449,9 @@
     {
       "name": "admin.searchOTPs",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEARCH OTP ADMINS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "",
@@ -552,13 +518,9 @@
     {
       "name": "admin.expireAllAdminOTPs",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "EXPIRE OTP ADMINS",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",

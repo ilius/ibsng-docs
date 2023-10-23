@@ -8,13 +8,9 @@
     {
       "name": "voip_provider.listRoutingProfiles",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE VOIP PROVIDER",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "params": [],
       "result": {
         "name": "",
         "comment": "list of profile names",
@@ -27,13 +23,9 @@
     {
       "name": "voip_provider.listVoIPProviders",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE VOIP PROVIDER",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "params": [],
       "result": {
         "name": "",
         "comment": "list of provider names",

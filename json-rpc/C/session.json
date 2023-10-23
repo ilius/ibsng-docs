@@ -8,11 +8,8 @@
     {
       "name": "session.expireSession",
       "description": "",
+      "auth_type": ["ADMIN", "NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN", "NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "session_id",
           "description": "",
@@ -33,11 +30,8 @@
     {
       "name": "session.getAuthData",
       "description": "",
+      "auth_type": ["ADMIN", "NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN", "NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "auth_session",
           "description": "session_id",

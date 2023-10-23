@@ -8,12 +8,9 @@
     {
       "name": "user.addNewUsers",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "ADD NEW USER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "count",
           "description": "",
@@ -77,11 +74,8 @@
     {
       "name": "user.getUserInfo",
       "description": "By User",
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -127,12 +121,9 @@
     {
       "name": "user.getUserInfo",
       "description": "By Admin",
+      "auth_type": ["ADMIN"],
       "requires_perm": "GET USER INFORMATION",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -187,11 +178,8 @@
     {
       "name": "user.doesUserExists",
       "description": "",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "normal_username",
           "description": "",
@@ -212,12 +200,9 @@
     {
       "name": "user.updateUserAttrs",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE USER ATTRIBUTES",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -252,11 +237,8 @@
     {
       "name": "user.getUsersWithPhone",
       "description": "",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "phone",
           "description": "",
@@ -277,11 +259,8 @@
     {
       "name": "user.getUsersWithCellPhone",
       "description": "",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "cell_phone",
           "description": "",
@@ -302,12 +281,9 @@
     {
       "name": "user.searchExpiredUsers",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "GET USER INFORMATION",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "",
@@ -361,13 +337,9 @@
     {
       "name": "user.searchExpiredUsersExtended",
       "description": "larger output than searchExpiredUsers, returns expiration dates too",
+      "auth_type": ["ADMIN"],
       "requires_perm": "GET USER INFORMATION",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -380,12 +352,9 @@
     {
       "name": "user.saveSearchExpiredUsers",
       "description": "use SystemNotification.getNotifications() method to see if the report is finished and get the URL to download it",
+      "auth_type": ["ADMIN"],
       "requires_perm": "GET USER INFORMATION",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "output_type",
           "description": "",
@@ -444,12 +413,9 @@
     {
       "name": "user.searchUser",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEARCH USER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "",
@@ -508,12 +474,9 @@
     {
       "name": "user.delUser",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "DELETE USER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "comma-seperated User IDs",
@@ -555,11 +518,8 @@
     {
       "name": "user.killUser",
       "description": "requires KILL USER permission if kill=true, and CLEAR USER permission is kill=false",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "comma-seperated User IDs",
@@ -602,12 +562,9 @@
     {
       "name": "user.killUserByID",
       "description": "by admin, disconnects all instances of given users",
+      "auth_type": ["ADMIN"],
       "requires_perm": "KILL USER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -636,12 +593,8 @@
     {
       "name": "user.killUserByID",
       "description": "by user, disconnects all instances of user himself",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        }
-      ],
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -654,11 +607,8 @@
     {
       "name": "user.killMe",
       "description": "by user, disconnects selected instance",
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "unique_id_val",
           "description": "Unique ID Value (for exmaple Port, Caller ID, etc)",
@@ -686,11 +636,8 @@
     {
       "name": "user.getRemainingDurationAndBytes",
       "description": "by admin",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -711,12 +658,8 @@
     {
       "name": "user.getRemainingDurationAndBytes",
       "description": "by user",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        }
-      ],
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -729,12 +672,9 @@
     {
       "name": "user.renewUsers",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "RENEW USER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -785,12 +725,9 @@
     {
       "name": "user.rechargeUsers",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "RECHARGE USER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -818,12 +755,9 @@
     {
       "name": "user.temporaryExtendUsers",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "TEMPORARY EXTEND",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -858,11 +792,8 @@
     {
       "name": "user.updateUserComments",
       "description": "",
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "update_dic",
           "description": "",
@@ -883,11 +814,8 @@
     {
       "name": "user.reloadUsers",
       "description": "",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -908,12 +836,9 @@
     {
       "name": "user.saveSearchUser",
       "description": "use SystemNotification.getNotifications() method to see if the report is finished and get the URL to download it",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEARCH USER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "the same as user.searchUser method",
@@ -981,12 +906,9 @@
     {
       "name": "user.changeStatus",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE USER ATTRIBUTES",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -1012,13 +934,9 @@
     {
       "name": "user.getBulkActionsForAdmin",
       "description": "get list of performed or running Bulk Actions, which admin has access to see them",
+      "auth_type": ["ADMIN"],
       "requires_perm": "PERFORM BULK ACTION",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -1031,12 +949,9 @@
     {
       "name": "user.viewBulkActionStatus",
       "description": "get status of a Bulk Action (that has been started by the admin himself)",
+      "auth_type": ["ADMIN"],
       "requires_perm": "PERFORM BULK ACTION",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "action_id",
           "description": "",
@@ -1169,12 +1084,9 @@
     {
       "name": "user.cancelBulkAction",
       "description": "cancel a Bulk Action (that has been started by the admin himself)",
+      "auth_type": ["ADMIN"],
       "requires_perm": "PERFORM BULK ACTION",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "action_id",
           "description": "",
@@ -1195,12 +1107,9 @@
     {
       "name": "user.clearBulkAction",
       "description": "clear (remove from list) a Bulk Action (that has been started by the admin himself), and is finished",
+      "auth_type": ["ADMIN"],
       "requires_perm": "PERFORM BULK ACTION",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "action_id",
           "description": "",
@@ -1221,12 +1130,9 @@
     {
       "name": "user.bulkUpdateUserAttrs",
       "description": "combines methods 'user.searchUser' and 'user.updateUserAttrs'",
+      "auth_type": ["ADMIN"],
       "requires_perm": "PERFORM BULK ACTION, SEARCH USER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "the same as method 'user.searchUser', parameter 'conds'",
@@ -1261,12 +1167,9 @@
     {
       "name": "user.bulkChangeUserCredit",
       "description": "combines methods 'user.searchUser' and 'user.changeCreditExtended'",
+      "auth_type": ["ADMIN"],
       "requires_perm": "PERFORM BULK ACTION, BULK CHANGE USER CREDIT",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "the same as method 'user.searchUser', parameter 'conds'",
@@ -1306,12 +1209,9 @@
     {
       "name": "user.bulkChangeUserDeposit",
       "description": "combines methods 'user.searchUser' and 'user.changeDepositExtended'",
+      "auth_type": ["ADMIN"],
       "requires_perm": "PERFORM BULK ACTION, BULK CHANGE USER DEPOSIT",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "the same as method 'user.searchUser', parameter 'conds'",
@@ -1351,12 +1251,9 @@
     {
       "name": "user.bulkDeleteUser",
       "description": "combines methods 'user.searchUser' and 'user.delUser'",
+      "auth_type": ["ADMIN"],
       "requires_perm": "PERFORM BULK ACTION, BULK DELETE USER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "the same as method 'user.searchUser', parameter 'conds'",
@@ -1398,12 +1295,9 @@
     {
       "name": "user.bulkRenewUsers",
       "description": "combines methods 'user.searchUser' and 'user.renewUsers'",
+      "auth_type": ["ADMIN"],
       "requires_perm": "PERFORM BULK ACTION, RENEW USER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "the same as method 'user.searchUser', parameter 'conds'",
@@ -1431,12 +1325,9 @@
     {
       "name": "user.bulkKillUsers",
       "description": "combines methods 'user.searchUser' and 'user.renewUsers'",
+      "auth_type": ["ADMIN"],
       "requires_perm": "PERFORM BULK ACTION, RENEW USER",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "the same as method 'user.searchUser', parameter 'conds'",
@@ -1465,13 +1356,9 @@
     {
       "name": "user.getUsersExpDateFirstLogin",
       "description": "returns username, expiration date and first login for ALL USERS                returns a large amount of data                for use by CRM only",
+      "auth_type": ["ADMIN"],
       "requires_perm": "GOD",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -1484,12 +1371,9 @@
     {
       "name": "user.setOneChargeRuleUsage",
       "description": "set or clear charge rule usage of one rule for one user",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE USER ATTRIBUTES",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -1538,12 +1422,9 @@
     {
       "name": "user.setFeshfesheParams",
       "description": "Added in tag 320, See http://wiki.parspooyesh.com/index.php/Feshfeshe",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE USER ATTRIBUTES",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",

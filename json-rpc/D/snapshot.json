@@ -8,12 +8,9 @@
     {
       "name": "snapshot.getBWSnapShotForUserAjax",
       "description": "by admin",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE REALTIME SNAPSHOTS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -51,11 +48,8 @@
     {
       "name": "snapshot.getBWSnapShotForUserAjax",
       "description": "",
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "from",
           "description": "by user",
@@ -85,12 +79,9 @@
     {
       "name": "snapshot.getOnlinesSnapShot",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE ONLINE SNAPSHOTS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "",
@@ -116,12 +107,8 @@
     {
       "name": "snapshot.getBWSnapShot",
       "description": "",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN", "NORMAL_USER", "VOIP_USER"]
-        }
-      ],
+      "auth_type": ["ADMIN", "NORMAL_USER", "VOIP_USER"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -134,12 +121,8 @@
     {
       "name": "snapshot.getGroupBWSnapShot",
       "description": "",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "auth_type": ["ADMIN"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -152,12 +135,8 @@
     {
       "name": "snapshot.getISPBWSnapShot",
       "description": "",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "auth_type": ["ADMIN"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -170,12 +149,8 @@
     {
       "name": "snapshot.getRasBWSnapShot",
       "description": "",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "auth_type": ["ADMIN"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",

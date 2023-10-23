@@ -201,12 +201,7 @@ def getJsonMethod(handlerName: str, method: "Element", authTypes: list[str]):
 	if outputElem is None:
 		print(f"{branch=}, no <output> for: {toStr(method)}")
 		return
-	params = [
-		{
-			"name": "auth_type",
-			"value": authTypes,
-		}
-	]
+	params = []
 	for param in inputElem.getchildren():
 		if param.tag != "param":
 			continue
@@ -220,6 +215,7 @@ def getJsonMethod(handlerName: str, method: "Element", authTypes: list[str]):
 	jsonMethod = {
 		"name": handlerName + "." + methodName,
 		"description": method.attrib.get("comment", ""),
+		"auth_type": authTypes,
 	}
 	requires_perm = method.attrib.get("requires_perm")
 	if requires_perm:

@@ -8,13 +8,9 @@
     {
       "name": "extra_charge.getExtraChargeProfileNames",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE EXTRA CHARGE",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "params": [],
       "result": {
         "name": "",
         "comment": "list of profile names",
@@ -27,12 +23,9 @@
     {
       "name": "extra_charge.addExtraChargeProfile",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE EXTRA CHARGE",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "profile_name",
           "description": "",
@@ -78,12 +71,9 @@
     {
       "name": "extra_charge.updateExtraChargeProfile",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE EXTRA CHARGE",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "profile_id",
           "description": "",
@@ -136,12 +126,9 @@
     {
       "name": "extra_charge.deleteExtraChargeProfile",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE EXTRA CHARGE",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "profile_name",
           "description": "",
@@ -162,13 +149,9 @@
     {
       "name": "extra_charge.getExtraChargeProfiles",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE EXTRA CHARGE",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -181,12 +164,9 @@
     {
       "name": "extra_charge.getExtraChargeProfileByName",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE EXTRA CHARGE",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "profile_name",
           "description": "",
@@ -248,12 +228,9 @@
     {
       "name": "extra_charge.getExtraChargeProfileByID",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE EXTRA CHARGE",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "profile_id",
           "description": "",

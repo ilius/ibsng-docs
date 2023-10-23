@@ -8,12 +8,9 @@
     {
       "name": "user_balance.addNewUserBalance",
       "description": "assign balance to user (add new user_balance)",
+      "auth_type": ["ADMIN"],
       "requires_perm": "ADD NEW USER BALANCE",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -117,11 +114,8 @@
     {
       "name": "user_balance.getUserBalanceInfoByUserID",
       "description": "return all balnce that assigned to user",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_id",
           "description": "",
@@ -242,11 +236,8 @@
     {
       "name": "user_balance.updateUserBalance",
       "description": "update the user_balance",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_balance_id",
           "description": "",
@@ -319,11 +310,8 @@
     {
       "name": "user_balance.getUserBalanceInfo",
       "description": "get user_balance_id and return the info",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_balance_id",
           "description": "",
@@ -437,11 +425,8 @@
     {
       "name": "user_balance.deleteUserBalance",
       "description": "delete the user_balance",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "id",
           "description": "",
@@ -469,11 +454,8 @@
     {
       "name": "user_balance.changeUserBalanceValue",
       "description": "update the value of user balance",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "user_balance_id",
           "description": "",
@@ -505,11 +487,8 @@
     {
       "name": "user_balance.searchUserBalanceChangeLog",
       "description": "",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "",

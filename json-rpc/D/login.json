@@ -8,11 +8,8 @@
     {
       "name": "login.webLogin",
       "description": "added in C_dev_326",
+      "auth_type": ["ANONYMOUS"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN", "NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "login_auth_type",
           "description": "",
@@ -73,11 +70,8 @@
     {
       "name": "login.login",
       "description": "login and return Session ID",
+      "auth_type": ["ANONYMOUS"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN", "NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "login_auth_type",
           "description": "",
@@ -124,11 +118,8 @@
     {
       "name": "login.login",
       "description": "login without generating session",
+      "auth_type": ["ANONYMOUS"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN", "NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "login_auth_type",
           "description": "",
@@ -161,11 +152,8 @@
     {
       "name": "login.searchAdminLoginHistory",
       "description": "",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "",

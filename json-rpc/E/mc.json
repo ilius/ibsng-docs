@@ -8,12 +8,8 @@
     {
       "name": "mc.getAllMSGTypes",
       "description": "",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN", "NORMAL_USER", "VOIP_USER"]
-        }
-      ],
+      "auth_type": ["ADMIN", "NORMAL_USER", "VOIP_USER"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -26,11 +22,8 @@
     {
       "name": "mc.getActiveMSGTypes",
       "description": "ADMIN, USER",
+      "auth_type": ["ADMIN", "NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN", "NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "view_type",
           "description": "",
@@ -49,12 +42,8 @@
     {
       "name": "mc.getProviderTypes",
       "description": "",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "auth_type": ["ADMIN"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "list of provider types",
@@ -67,11 +56,8 @@
     {
       "name": "mc.getProviderInfoByName",
       "description": "",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "provider_name",
           "description": "",
@@ -137,11 +123,8 @@
     {
       "name": "mc.getProviderAttrsByName",
       "description": "",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "provider_name",
           "description": "",
@@ -162,12 +145,9 @@
     {
       "name": "mc.addNewProvider",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE PROVIDERS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "provider_type",
           "description": "",
@@ -255,12 +235,9 @@
     {
       "name": "mc.updateProviderAttrs",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE PROVIDERS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "provider_name",
           "description": "",
@@ -288,12 +265,8 @@
     {
       "name": "mc.getAllActiveProviders",
       "description": "",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "auth_type": ["ADMIN"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "list of Provide Info dictionaries",
@@ -306,12 +279,9 @@
     {
       "name": "mc.removeProvider",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE PROVIDERS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "provider_name",
           "description": "",
@@ -332,12 +302,9 @@
     {
       "name": "mc.resetProviderAttrs",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE PROVIDERS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "provider_name",
           "description": "",
@@ -358,12 +325,9 @@
     {
       "name": "mc.addNewEPGroupToProvider",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE PROVIDERS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "end_point_range",
           "description": "comma-seperated end-point groups",
@@ -391,12 +355,9 @@
     {
       "name": "mc.getAllEPGroupsOfProvider",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE PROVIDERS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "provider_name",
           "description": "",
@@ -417,12 +378,9 @@
     {
       "name": "mc.getProviderUnassignedEPs",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE PROVIDERS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "provider_name",
           "description": "",
@@ -457,12 +415,9 @@
     {
       "name": "mc.unAssingAllFromGroup",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE PROVIDERS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "provider_name",
           "description": "",
@@ -490,12 +445,9 @@
     {
       "name": "mc.removeEPGroupFromProvider",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE PROVIDERS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "provider_id",
           "description": "",
@@ -523,12 +475,9 @@
     {
       "name": "mc.getEPGroupUsageInfo",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE PROVIDERS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "end_point_group_id",
           "description": "",
@@ -586,11 +535,8 @@
     {
       "name": "mc.receive",
       "description": "",
+      "auth_type": ["ADMIN", "NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN", "NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "msg_info",
           "description": "",
@@ -611,11 +557,8 @@
     {
       "name": "mc.enqueueSend",
       "description": "without schedule_date",
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "body",
           "description": "",
@@ -648,11 +591,8 @@
     {
       "name": "mc.enqueueSend",
       "description": "with schedule_date",
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "body",
           "description": "",
@@ -704,11 +644,8 @@
     {
       "name": "mc.adminEnqueueSend",
       "description": "without schedule_date",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "body",
           "description": "",
@@ -741,11 +678,8 @@
     {
       "name": "mc.adminEnqueueSend",
       "description": "with schedule_date",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "body",
           "description": "",
@@ -797,11 +731,8 @@
     {
       "name": "mc.activateService",
       "description": "",
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "cell_number",
           "description": "",
@@ -822,12 +753,8 @@
     {
       "name": "mc.resetUserActivationCode",
       "description": "",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        }
-      ],
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -840,11 +767,8 @@
     {
       "name": "mc.checkActivationCode",
       "description": "",
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "activation_code",
           "description": "",
@@ -865,12 +789,8 @@
     {
       "name": "mc.getUserActivationNumber",
       "description": "",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        }
-      ],
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -892,11 +812,8 @@
     {
       "name": "mc.userSearchReceivedMessage",
       "description": "",
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "conds",
           "description": "",
@@ -943,12 +860,9 @@
     {
       "name": "mc.adminSearchReceivedMessage",
       "description": "Messages of Users",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE MESSAGE CENTER REPORTS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "",
@@ -995,12 +909,9 @@
     {
       "name": "mc.adminSearchReceivedMessage",
       "description": "Messages of ISP",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE MESSAGE CENTER REPORTS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "",
@@ -1047,11 +958,8 @@
     {
       "name": "mc.userSearchSentMessage",
       "description": "",
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "conds",
           "description": "",
@@ -1182,12 +1090,9 @@
     {
       "name": "mc.adminSearchSentMessage",
       "description": "Messages of Users",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE MESSAGE CENTER REPORTS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "",
@@ -1318,12 +1223,9 @@
     {
       "name": "mc.adminSearchSentMessage",
       "description": "Messages of ISP",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE MESSAGE CENTER REPORTS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "",
@@ -1454,12 +1356,9 @@
     {
       "name": "mc.adminSearchQueuedMessage",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE MESSAGE CENTER REPORTS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "",
@@ -1595,11 +1494,8 @@
     {
       "name": "mc.userSearchQueuedMessage",
       "description": "",
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "conds",
           "description": "",
@@ -1735,11 +1631,8 @@
     {
       "name": "mc.userSearchMessagesForDialer",
       "description": "",
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "from",
           "description": "",
@@ -1792,12 +1685,8 @@
     {
       "name": "mc.getUserLastMessageID",
       "description": "",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        }
-      ],
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "Message ID of Last Message",
@@ -1810,11 +1699,8 @@
     {
       "name": "mc.dialerDeleteMessage",
       "description": "",
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "message_id",
           "description": "",
@@ -1835,11 +1721,8 @@
     {
       "name": "mc.userDeleteMessage",
       "description": "",
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "message_ids",
           "description": "",
@@ -1865,12 +1748,9 @@
     {
       "name": "mc.adminDeleteMessage",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE MESSAGE CENTER REPORTS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "message_ids",
           "description": "",
@@ -1902,11 +1782,8 @@
     {
       "name": "mc.userCancelScheduledMessages",
       "description": "",
+      "auth_type": ["NORMAL_USER", "VOIP_USER"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["NORMAL_USER", "VOIP_USER"]
-        },
         {
           "name": "message_ids",
           "description": "",
@@ -1927,12 +1804,9 @@
     {
       "name": "mc.adminCancelScheduledMessages",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE MESSAGE CENTER REPORTS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "message_ids",
           "description": "",
@@ -1953,12 +1827,9 @@
     {
       "name": "mc.updateAdminRemoteRequestAttrs",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE MESSAGE CENTER REPORTS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "remote_report_status",
           "description": "",
@@ -2000,12 +1871,9 @@
     {
       "name": "mc.updateUserRemoteRequestAttrs",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE MESSAGE CENTER REPORTS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "remote_report_status",
           "description": "",
@@ -2047,12 +1915,9 @@
     {
       "name": "mc.getRemoteRequestAttrs",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "SEE MESSAGE CENTER REPORTS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "type",
           "description": "",

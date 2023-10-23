@@ -8,12 +8,9 @@
     {
       "name": "ras.addNewRas",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE RAS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ras_ip",
           "description": "",
@@ -69,12 +66,9 @@
     {
       "name": "ras.getRasInfo",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "GET RAS INFORMATION",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ras_ip",
           "description": "",
@@ -153,12 +147,8 @@
     {
       "name": "ras.getActiveRasIPs",
       "description": "All active RASs, without type filter",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "auth_type": ["ADMIN"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "list of Ras IPs",
@@ -171,11 +161,8 @@
     {
       "name": "ras.getActiveRasIPs",
       "description": "Active RASs with specific type",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "type_filter",
           "description": "",
@@ -196,12 +183,8 @@
     {
       "name": "ras.getRasDescriptions",
       "description": "",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "auth_type": ["ADMIN"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -214,13 +197,9 @@
     {
       "name": "ras.getInActiveRases",
       "description": "List of inactive RAS IPs",
+      "auth_type": ["ADMIN"],
       "requires_perm": "LIST RAS",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "params": [],
       "result": {
         "name": "",
         "comment": "list of RAS IPs",
@@ -233,13 +212,9 @@
     {
       "name": "ras.getRasTypes",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "GET RAS INFORMATION",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "params": [],
       "result": {
         "name": "",
         "comment": "list of RAS types",
@@ -252,12 +227,9 @@
     {
       "name": "ras.getRasAttributes",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "GET RAS INFORMATION",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ras_ip",
           "description": "",
@@ -278,11 +250,8 @@
     {
       "name": "ras.updateRasInfo",
       "description": "",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ras_id",
           "description": "",
@@ -345,12 +314,9 @@
     {
       "name": "ras.updateAttributes",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE RAS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ras_ip",
           "description": "",
@@ -378,12 +344,9 @@
     {
       "name": "ras.resetAttributes",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE RAS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ras_ip",
           "description": "",
@@ -404,12 +367,9 @@
     {
       "name": "ras.deActiveRas",
       "description": "Deactivate RAS",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE RAS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ras_ip",
           "description": "",
@@ -430,12 +390,9 @@
     {
       "name": "ras.deleteRas",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE RAS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ras_id",
           "description": "",
@@ -456,12 +413,9 @@
     {
       "name": "ras.reActiveRas",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE RAS",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ras_ip",
           "description": "",
@@ -482,12 +436,9 @@
     {
       "name": "ras.getRasIPpools",
       "description": "Returns a sorted list of IPPool names for a RAS",
+      "auth_type": ["ADMIN"],
       "requires_perm": "GET RAS INFORMATION",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ras_ip",
           "description": "",
@@ -508,11 +459,8 @@
     {
       "name": "ras.addIPpoolToRas",
       "description": "",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ras_ip",
           "description": "",
@@ -540,11 +488,8 @@
     {
       "name": "ras.delIPpoolFromRas",
       "description": "",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "ras_ip",
           "description": "",

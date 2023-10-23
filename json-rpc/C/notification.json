@@ -8,12 +8,8 @@
     {
       "name": "notification.getNotificationProfileNames",
       "description": "list of notification profile names that admin has access to.",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "auth_type": ["ADMIN"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "list of profile names",
@@ -26,13 +22,9 @@
     {
       "name": "notification.getNotificationProfiles",
       "description": "list of notification profile informations that admin has access to.",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE NOTIFICATION",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "params": [],
       "result": {
         "name": "",
         "comment": "list of profile infos",
@@ -45,12 +37,9 @@
     {
       "name": "notification.addNotificationProfile",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE NOTIFICATION",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "notification_profile_name",
           "description": "",
@@ -78,12 +67,9 @@
     {
       "name": "notification.updateNotificationProfile",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE NOTIFICATION",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "notification_profile_id",
           "description": "",
@@ -118,11 +104,8 @@
     {
       "name": "notification.getNotificationProfileByName",
       "description": "",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "notification_profile_name",
           "description": "",
@@ -191,12 +174,9 @@
     {
       "name": "notification.deleteNotificationProfile",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE NOTIFICATION",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "notification_profile_name",
           "description": "",
@@ -217,12 +197,9 @@
     {
       "name": "notification.addNotificationRule",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE NOTIFICATION",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "notification_profile_id",
           "description": "",
@@ -287,12 +264,9 @@
     {
       "name": "notification.deleteNotificationRule",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE NOTIFICATION",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "notification_profile_id",
           "description": "",
@@ -320,12 +294,9 @@
     {
       "name": "notification.updateNotificationRule",
       "description": "",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE NOTIFICATION",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "notification_rule_id",
           "description": "",

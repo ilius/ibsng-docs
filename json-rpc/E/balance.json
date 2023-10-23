@@ -8,12 +8,9 @@
     {
       "name": "balance.addNewBalance",
       "description": "add new balance",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE BALANCE",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "name",
           "description": "",
@@ -116,12 +113,8 @@
     {
       "name": "balance.getBalanceClasses",
       "description": "get the list of balance classes",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "auth_type": ["ADMIN"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -150,12 +143,8 @@
     {
       "name": "balance.getBalanceValueTypes",
       "description": "get the list of balance value type",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "auth_type": ["ADMIN"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -184,12 +173,8 @@
     {
       "name": "balance.getBalanceLifeCycleStatuses",
       "description": "get the list of balance life cycle statuses",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "auth_type": ["ADMIN"],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -225,11 +210,8 @@
     {
       "name": "balance.getBalanceInfo",
       "description": "get balance info by balance name or balance id",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "balance_name",
           "description": "",
@@ -259,11 +241,8 @@
     {
       "name": "balance.updateBalance",
       "description": "update the balance information",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "name",
           "description": "",
@@ -357,13 +336,9 @@
     {
       "name": "balance.getListValidBalanceName",
       "description": "The meaning of validity is that the date range considered for                                                                                                     the balance is within the day and that the balance status is active.",
+      "auth_type": ["ADMIN"],
       "requires_perm": "LIST BALANCES",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "params": [],
       "result": {
         "name": "",
         "comment": "",
@@ -392,12 +367,9 @@
     {
       "name": "balance.deleteBalance",
       "description": "Delete the balance",
+      "auth_type": ["ADMIN"],
       "requires_perm": "CHANGE BALANCE",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "balance_id",
           "description": "",
@@ -418,12 +390,9 @@
     {
       "name": "balance.getAllBalancesNames",
       "description": "get list balances can filter with status",
+      "auth_type": ["ADMIN"],
       "requires_perm": "LIST BALANCES",
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "include_retired",
           "description": "if set, return balances that status is RETIRED",
@@ -445,13 +414,9 @@
     {
       "name": "balance.getAllBalanceIdsAndNames",
       "description": "get all list balances without filter",
+      "auth_type": ["ADMIN"],
       "requires_perm": "LIST BALANCES",
-      "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        }
-      ],
+      "params": [],
       "result": {
         "name": "",
         "comment": "list of balance name and balance id",
@@ -464,11 +429,8 @@
     {
       "name": "balance.getBalanceNameById",
       "description": "get balance id and return name of balance",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "balance_id",
           "description": "",
@@ -498,11 +460,8 @@
     {
       "name": "balance.searchBalance",
       "description": "search in balances",
+      "auth_type": ["ADMIN"],
       "params": [
-        {
-          "name": "auth_type",
-          "value": ["ADMIN"]
-        },
         {
           "name": "conds",
           "description": "",
